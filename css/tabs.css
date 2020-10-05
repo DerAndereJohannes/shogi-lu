@@ -33,14 +33,6 @@
 	display: none;
 }
 
-/* .tab-pane.is-active {
-display: block;
-width: 50%;
-position: relative;
-left: 50%;
-transform: translateX(-50%);
-} */
-
 .is-active {
 	display: initial;
 }
@@ -125,7 +117,9 @@ transform: translateX(-50%);
 
 @media only screen and (min-width: 768px) {
 	.tab-content {
-		padding: 60px 120px 0px 120px;
+		padding-top: 60px;
+		padding-left: 120px;
+		padding-right: 120px;
 		top: 197px;
 		color: #000;
 		background-color: white;
