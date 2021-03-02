@@ -1,7 +1,7 @@
 ---
 icon: fab fa-youtube
 type: Youtube Playlist
-image_url: https://i.ytimg.com/vi/0GcgMTijgTI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBH5GNNhlKjIV9fYbspQWfnZaStcQ
+image_url: images/material/sm-shogiharbouryt.jpg
 title: Shogi Tutorials
 author: Shogi Harbour
 language: flag gb is-48x48

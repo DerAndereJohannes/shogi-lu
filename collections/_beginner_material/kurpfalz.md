@@ -1,7 +1,7 @@
 ---
 icon: fab fa-youtube
 type: Youtube Playlist
-image_url: https://i.ytimg.com/vi/ZjQA10Ypkwc/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDJcppKtJiq7Quwq2HksA_cqwD0Qg
+image_url: images/material/sm-kurpfalz.jpg
 title: Shogi - Einführung für Anfänger
 author: Shogi Kurpfalz
 language: flag de is-48x48

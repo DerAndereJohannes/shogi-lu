@@ -1,7 +1,7 @@
 ---
 icon: fas fa-chalkboard-teacher
 type: Guide
-image_url: images/shogigui.png
+image_url: images/material/sm-shogigui.png
 title: ShogiGUI quick tutorial
 author: CtripleA
 language: flag gb is-48x48

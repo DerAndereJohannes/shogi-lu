@@ -1,7 +1,7 @@
 ---
 icon: fa fa-bookmark
 type: Website
-image_url: https://shogialsace.files.wordpress.com/2015/02/cropped-10903793_337011586489690_5230601397112970519_o-1.jpg
+image_url: images/material/sm-alsace.jpg
 title: Règles du Jeu
 author: Association Shogi d'Alsace
 language: flag fr is-48x48

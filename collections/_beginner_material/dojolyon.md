@@ -1,7 +1,7 @@
 ---
 icon: fab fa-youtube
 type: Youtube Playlist
-image_url: https://i.ytimg.com/vi/B4UBMBA86xQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCbX9-XgToSYIuPjROvGyZKgF4UTg
+image_url: images/material/sm-lyonyt.jpg
 title: Cours Débutant
 author: Shogi Dojo Lyon
 language: flag fr is-48x48

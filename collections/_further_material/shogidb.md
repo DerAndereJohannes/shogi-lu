@@ -1,7 +1,7 @@
 ---
 icon: fas fa-database
 type: Database
-image_url: images/shogidb.png
+image_url: images/material/sm-shogidb.png
 title: Shogidb2
 author: 将棋DB2
 language: jp flag-jp is-vcentered

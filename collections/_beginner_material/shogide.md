@@ -1,7 +1,7 @@
 ---
 icon: fa fa-bookmark
 type: Website
-image_url: https://www.shogi.de/images/koma/P1010500_315x236.jpg
+image_url: images/material/sm-shogide.jpg
 title: Shogi Spielregeln
 author: shogi.de
 language: flag de is-48x48

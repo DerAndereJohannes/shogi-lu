@@ -1,7 +1,7 @@
 ---
 icon: fas fa-book
 type: Books
-image_url: images/mynavi.png
+image_url: images/material/sm-mynavi.png
 title: Shogi Book Shop
 author: Mynavi Books
 language: jp flag-jp

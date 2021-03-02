@@ -1,7 +1,7 @@
 ---
 icon: fas fa-bookmark
 type: Website
-image_url: images/kakugen.png
+image_url: images/material/sm-kakugen.png
 title: Shogi Proverbs with Commentaries
 author: Takako Tombo Noda
 language: flag gb is-48x48

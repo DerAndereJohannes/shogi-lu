@@ -1,7 +1,7 @@
 ---
 icon: fab fa-youtube
 type: Youtube Playlist
-image_url: https://i.ytimg.com/vi/QTHEVwtmsXo/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA3-kYOkM5IFwIwdVf27MkJs0syZw
+image_url: images/material/sm-hidetchi.jpg
 title: How to play Shogi(将棋)
 author: Hidetchi
 language: flag gb is-48x48

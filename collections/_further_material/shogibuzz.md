@@ -1,7 +1,7 @@
 ---
 icon: fab fa-youtube
 type: Youtube Playlist
-image_url: images/youtube-thumb/tkshogitv.jpg
+image_url: images/material/sm-tkshogitv.jpg
 title: Shogi - Road to 1st-Dan
 author: SHOGIBUZZ
 language: flag gb is-48x48

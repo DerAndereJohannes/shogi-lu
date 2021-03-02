@@ -1,7 +1,7 @@
 ---
 icon: fas fa-bookmark
 type: Website
-image_url: images/playshogi.png
+image_url: images/material/sm-playshogi.png
 title: playshogi.com
 author: Tellmarch
 language: flag gb is-48x48
