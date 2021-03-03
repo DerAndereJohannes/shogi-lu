@@ -1,7 +1,7 @@
 {
   "name": "shogilu",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://shogi.lu/ source code",
   "main": "sass/mystyles.scss",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
@@ -16,5 +16,13 @@
   },
   "dependencies": {
     "@creativebulma/bulma-divider": "file:node_modules/@creativebulma/bulma-divider"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerAndereJohannes/shogi-lu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DerAndereJohannes/shogi-lu/issues"
+  },
+  "homepage": "https://github.com/DerAndereJohannes/shogi-lu#readme"
 }
