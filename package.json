@@ -14,9 +14,6 @@
     "bulma": "^0.9.0",
     "node-sass": "^4.14.1"
   },
-  "dependencies": {
-    "@creativebulma/bulma-divider": "file:node_modules/@creativebulma/bulma-divider"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DerAndereJohannes/shogi-lu.git"
