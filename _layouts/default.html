@@ -13,10 +13,6 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/communities/shogiluxembourg.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114122461-2"></script>
-    <!-- code for cookies is at the bottom of the body -->
-
     <title>Shogi Luxembourg</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Bulma Version 0.9.0-->
@@ -96,10 +92,14 @@
     <script src="cookies/cookies-eu-banner.js"></script>
     <script>
         var cookieBanner = new CookiesEuBanner(function() {
+            /* LOAD THE SCRIPT */
+            var ga = document.createElement("script");
+            ga.src = "https://www.googletagmanager.com/gtag/js?id=UA-114122461-2";
+            document.head.appendChild(ga);
+            /* ACTIVATE THE SCRIPT */
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-
             gtag('config', 'UA-114122461-2');
         }, true);
     </script>
