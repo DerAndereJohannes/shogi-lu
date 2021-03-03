@@ -73,11 +73,7 @@
 }
 
 .habu {
-	background-image: url("../images/header.png");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	background-image: url("../images/front/sm-header.png");
 	box-shadow: rgba(0, 0, 0, 0.5);
 }
 

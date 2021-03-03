@@ -15,13 +15,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114122461-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-114122461-2');
-    </script>
+    <!-- code for cookies is at the bottom of the body -->
 
     <title>Shogi Luxembourg</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -30,9 +24,18 @@
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/flags.css">
     <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    <!-- COOKIES!!! -->
+    <link rel="stylesheet" href="cookies/cookies-eu-banner.default.css">
+
 </head>
 
 <body>
+    <div id="cookies-eu-banner" style="display: none;">
+        This website would like to use Google Analytics to find out the popularity and location of interested participants. The information will only be used for statistical purposes and will never be shared with anyone else.
+        <a href="./read-more.html" id="cookies-eu-more">Read more</a>
+        <button id="cookies-eu-reject">Reject</button>
+        <button id="cookies-eu-accept">Accept</button>
+    </div>
     <section class="hero is-info habu">
         <div class="hero-body">
             <div class="container">
@@ -989,11 +992,22 @@
                 sure to get in touch.
             </p>
             <p>
-            <p class="has-text-weight-light">Last Update: Tuesday 2 March 2021 at 23:56 </p>
+            <p class="has-text-weight-light">Last Update: Wednesday 3 March 2021 at 01:01 </p>
             </p>
         </div>
     </footer>
     <script src="js/tabs.js"></script>
+    <!-- COOKIES! -->
+    <script src="cookies/cookies-eu-banner.js"></script>
+    <script>
+        var cookieBanner = new CookiesEuBanner(function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-114122461-2');
+        }, true);
+    </script>
 </body>
 
 </html>
