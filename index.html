@@ -146,7 +146,7 @@ title: Home
                 on the internet and we would suggest to get started as soon as you feel ready! Below are listed
                 the most popular options for international and many Japanese Shogi players.</h2>
 
-            <a href="https://lishogi.org/" target="_blank">
+            <!-- <a href="https://lishogi.org/" target="_blank">
                 <div class="tile is-parent">
                     <div class="tile notification is-child is-link is-fullwidth">
                         <div class="content">
@@ -175,33 +175,29 @@ title: Home
                         </div>
                     </div>
                 </div>
-            </a>
-
-            <a href="https://81dojo.com/" target="_blank">
+            </a> -->
+            {% assign ordered_platforms = site.play_location | sort:"order" %}
+            {% for platform in ordered_platforms %}
+            {% if platform.location == "web" %}
+            <a href="{{ platform.link }}" target="_blank">
                 <div class="tile is-parent">
-                    <div class="tile notification is-child is-success is-fullwidth">
+                    <div class="tile notification is-child {{ platform.colour_class }} is-fullwidth">
                         <div class="content">
                             <div class="columns is-vcentered">
                                 <div class="column is-5">
                                     <figure class="image">
-                                        <img src="images/play/sm-81dojo.png" alt="https://81dojo.com/" class="cent">
+                                        <img src="{{ platform.img_src }}" alt="{{ platform.link }}" class="cent">
                                     </figure>
                                 </div>
                                 <div class="column">
-                                    <p class="title is-2">81Dojo</p>
-                                    <p class="subtitle is-5 has-text-justified">The best place to play casually
-                                        or play in amateur
-                                        tournaments online. The website allows for the users to play both long
-                                        and short time controls and many different variations of Shogi such as
-                                        Doubutsu or gorogoro Shogi. </p>
+                                    <p class="title is-2">{{ platform.title }}</p>
+                                    <p class="subtitle is-5 has-text-justified">{{ platform.content }}</p>
                                     <hr>
                                     <p class="title is-5">Features</p>
                                     <ul>
-                                        <li>Completely Free (no paid option available)</li>
-                                        <li>Has web and phone clients</li>
-                                        <li>Many variation and handicap options</li>
-                                        <li>Great Post Game Analysis helpers</li>
-                                        <li>Access to many amateur online tournaments</li>
+                                        {% for feature in platform.features %}
+                                        <li>{{ feature }}</li>
+                                        {% endfor %}
                                     </ul>
                                 </div>
                             </div>
@@ -209,38 +205,8 @@ title: Home
                     </div>
                 </div>
             </a>
-
-            <a href="https://shogiwars.heroz.jp/" target="_blank">
-                <div class="tile is-parent">
-                    <div class="tile notification is-child is-danger is-fullwidth">
-                        <div class="content">
-                            <div class="columns is-vcentered">
-                                <div class="column is-5">
-                                    <figure class="image">
-                                        <img src="images/play/sm-shogiwars.png" alt="https://shogiwars.heroz.jp/"
-                                            class="cent">
-                                    </figure>
-                                </div>
-                                <div class="column">
-                                    <p class="title is-2">Shogi Wars</p>
-                                    <p class="subtitle is-5 has-text-justified">A Shogi client that is highly
-                                        focussed towards speed. With its great matchmaking system and the higher
-                                        playerbase, getting into a game on shogiwars is always very fast. </p>
-                                    <hr>
-                                    <p class="title is-5">Features</p>
-                                    <ul>
-                                        <li>Free for 3 games a day (paid option available)</li>
-                                        <li>Has web and phone clients</li>
-                                        <li>Focuses only on fast games (10s/3minute/10minute)</li>
-                                        <li>Great matchmaking system to get you into a game fast</li>
-                                        <li>Far larger player base, but little social options</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+            {% endif %}
+            {% endfor %}
         </section>
 
         <!-- OFFLINE -->
