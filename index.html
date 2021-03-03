@@ -125,6 +125,116 @@ title: Home
         </section>
 
     </div>
+        <div class="tab-pane end-of-page" id="pane-2">
+        <section class="tab-content has-text-centered">
+            <h1 class="title content-font">
+                Learn Shogi
+            </h1>
+            <hr>
+        </section>
+        <!-- INTRODUCTION TO LEARNING -->
+        <section class="tab-content has-text-justified remove-bottom-space" style="padding-top:0px;">
+            <h2 class="subtitle is-4 has-text-grey-dark has-text-justified">
+                Shogi is the most popular chess variant in Japan. Many similarities between Shogi and western
+                chess can be seen as they evolved off of the same ancestor. The main objective of the game is to
+                checkmate the opponent's king, while keeping your own safe. Nowadays, there are many
+                international options to learn about shogi with more being created
+                every day. Below
+                is a list of some video and reading sources that can be used as a starting point.
+            </h2>
+        </section>
+        <h1 class="title is-1 tab-content content-font remove-bottom-space"
+            style="padding-bottom:0px;margin-bottom:0px;">Beginner Material</h1>
+        <h2 class="subtitle is-4 tab-content has-text-grey-dark has-text-justified"
+            style="padding-bottom:0px;margin-bottom:0px;">If you have not played at all, check out one of these
+            sources to get started on your shogi adventure!</h2>
+        <section class="section tab-content">
+            <div class="row columns is-multiline">
+                <!-- CARDS BEGINNER MATERIAL -->
+                {% for material in site.beginner_material %}
+                <div class="column is-4-widescreen is-6-tablet">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span class="icon is-small"><i class="{{ material.icon }}"
+                                        style="margin-right: 5px;"></i></span>
+                                {{ material.type }}
+                            </p>
+                            <span class="image {{ material.language }}">
+                        </header>
+                        <div class="card-content">
+                            <div class="media" style="margin-bottom: 0rem;">
+                                <div class="media-left">
+                                    <figure class="image is-16by9" style="width: 96px;">
+                                        <img src="{{ material.image_url }}" alt="{{ material.author }}">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 has-text-black">{{ material.title }}</p>
+                                    <p class="subtitle is-6 has-text-grey-dark">{{ material.author }}</p>
+                                </div>
+                            </div>
+                            <div class="content has-text-justified">
+                                <hr>
+                                {{ material.content }}
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="{{ material.link }}" class="card-footer-item">Visit Source</a>
+                        </footer>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <h1 class="title is-1 tab-content content-font remove-bottom-space"
+            style="padding-bottom:0px;margin-bottom:0px;">Further Material</h1>
+        <h2 class="subtitle is-4 tab-content has-text-grey-dark has-text-justified remove-bottom-space"
+            style="padding-bottom:0px;margin-bottom:0px;">Once you have got the basics down, you can either
+            attempt to start playing games (see the <strong class="has-text-black">Play</strong> tab), or you
+            can study further and grasp a deeper understanding of the game and how to improve. Here are a few
+            resources to get you started.</h2>
+        <section class="section tab-content">
+            <div class="row columns is-multiline">
+                <!-- CARDS FURTHER MATERIAL -->
+                {% for material in site.further_material %}
+                <div class="column is-4-widescreen is-6-tablet">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span class="icon is-small"><i class="{{ material.icon }}"
+                                        style="margin-right: 5px;"></i></span>
+                                {{ material.type}}
+                            </p>
+                            <span class="image {{ material.language}}">
+                        </header>
+                        <div class="card-content">
+                            <div class="media" style="margin-bottom: 0rem;">
+                                <div class="media-left">
+                                    <figure class="image" style="width: 96px;">
+                                        <img src="{{ material.image_url }}" alt="{{ material.author }}">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 has-text-black">{{ material.title }}</p>
+                                    <p class="subtitle is-6 has-text-grey-dark">{{ material.author }}</p>
+                                </div>
+                            </div>
+                            <div class="content has-text-justified">
+                                <hr>
+                                {{ material.content }}
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="{{ material.link }}" class="card-footer-item">Visit Source</a>
+                        </footer>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
     <div class="tab-pane" id="pane-3">
         <section class="tab-content has-text-centered">
             <h1 class="title content-font">
@@ -305,116 +415,6 @@ title: Home
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <div class="tab-pane end-of-page" id="pane-2">
-        <section class="tab-content has-text-centered">
-            <h1 class="title content-font">
-                Learn Shogi
-            </h1>
-            <hr>
-        </section>
-        <!-- INTRODUCTION TO LEARNING -->
-        <section class="tab-content has-text-justified remove-bottom-space" style="padding-top:0px;">
-            <h2 class="subtitle is-4 has-text-grey-dark has-text-justified">
-                Shogi is the most popular chess variant in Japan. Many similarities between Shogi and western
-                chess can be seen as they evolved off of the same ancestor. The main objective of the game is to
-                checkmate the opponent's king, while keeping your own safe. Nowadays, there are many
-                international options to learn about shogi with more being created
-                every day. Below
-                is a list of some video and reading sources that can be used as a starting point.
-            </h2>
-        </section>
-        <h1 class="title is-1 tab-content content-font remove-bottom-space"
-            style="padding-bottom:0px;margin-bottom:0px;">Beginner Material</h1>
-        <h2 class="subtitle is-4 tab-content has-text-grey-dark has-text-justified"
-            style="padding-bottom:0px;margin-bottom:0px;">If you have not played at all, check out one of these
-            sources to get started on your shogi adventure!</h2>
-        <section class="section tab-content">
-            <div class="row columns is-multiline">
-                <!-- CARDS BEGINNER MATERIAL -->
-                {% for material in site.beginner_material %}
-                <div class="column is-4-widescreen is-6-tablet">
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span class="icon is-small"><i class="{{ material.icon }}"
-                                        style="margin-right: 5px;"></i></span>
-                                {{ material.type }}
-                            </p>
-                            <span class="image {{ material.language }}">
-                        </header>
-                        <div class="card-content">
-                            <div class="media" style="margin-bottom: 0rem;">
-                                <div class="media-left">
-                                    <figure class="image is-16by9" style="width: 96px;">
-                                        <img src="{{ material.image_url }}" alt="{{ material.author }}">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 has-text-black">{{ material.title }}</p>
-                                    <p class="subtitle is-6 has-text-grey-dark">{{ material.author }}</p>
-                                </div>
-                            </div>
-                            <div class="content has-text-justified">
-                                <hr>
-                                {{ material.content }}
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="{{ material.link }}" class="card-footer-item">Visit Source</a>
-                        </footer>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
-
-        <h1 class="title is-1 tab-content content-font remove-bottom-space"
-            style="padding-bottom:0px;margin-bottom:0px;">Further Material</h1>
-        <h2 class="subtitle is-4 tab-content has-text-grey-dark has-text-justified remove-bottom-space"
-            style="padding-bottom:0px;margin-bottom:0px;">Once you have got the basics down, you can either
-            attempt to start playing games (see the <strong class="has-text-black">Play</strong> tab), or you
-            can study further and grasp a deeper understanding of the game and how to improve. Here are a few
-            resources to get you started.</h2>
-        <section class="section tab-content">
-            <div class="row columns is-multiline">
-                <!-- CARDS FURTHER MATERIAL -->
-                {% for material in site.further_material %}
-                <div class="column is-4-widescreen is-6-tablet">
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span class="icon is-small"><i class="{{ material.icon }}"
-                                        style="margin-right: 5px;"></i></span>
-                                {{ material.type}}
-                            </p>
-                            <span class="image {{ material.language}}">
-                        </header>
-                        <div class="card-content">
-                            <div class="media" style="margin-bottom: 0rem;">
-                                <div class="media-left">
-                                    <figure class="image" style="width: 96px;">
-                                        <img src="{{ material.image_url }}" alt="{{ material.author }}">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 has-text-black">{{ material.title }}</p>
-                                    <p class="subtitle is-6 has-text-grey-dark">{{ material.author }}</p>
-                                </div>
-                            </div>
-                            <div class="content has-text-justified">
-                                <hr>
-                                {{ material.content }}
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="{{ material.link }}" class="card-footer-item">Visit Source</a>
-                        </footer>
-                    </div>
-                </div>
-                {% endfor %}
             </div>
         </section>
     </div>
