@@ -48,3 +48,9 @@ Thumbs.db
 *.mov
 *.wmv
 
+
+# jekyll site
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
