@@ -1,4 +1,4 @@
-# Shogi Luxembourg Website [https://shogi.lu](https://shogi.lu/)
+# Shogi Luxembourg Website - [shogi.lu](https://shogi.lu/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/07ab0aa0-27ee-413a-89b0-9f87a0787ba4/deploy-status)](https://app.netlify.com/sites/reverent-fermat-4de261/deploys)
 
 ## Introduction
