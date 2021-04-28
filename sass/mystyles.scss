@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+$gap: 32px;
+$fullhd: 1500 + (2 * $gap);
+
+hr.limit-width {
+    max-width: $fullhd;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @import "../node_modules/bulma/bulma.sass";
 @import "extensions/ribbon.sass"
